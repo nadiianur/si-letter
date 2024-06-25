@@ -54,7 +54,7 @@ const viewPermohonanKabir = async (req, res) => {
                 as: 'dataMahasiswa',
                 attributes: ['id_mahasiswa', 'nama', 'instansi', 'jurusan']
             }],
-            attributes: ['id_surat_masuk', 'file', 'created_at']
+            attributes: ['id_surat_masuk', 'file', 'created_at', 'periode_magang']
         })
 
         if (findPermohonan.length === 0) {

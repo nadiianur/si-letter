@@ -106,7 +106,7 @@ const detailPermohonanKabag = async (req, res) => {
                 attributes: []
             }]
         }],
-        attributes: ['id_surat_masuk', 'created_at', 'file', 'keterangan']
+        attributes: ['id_surat_masuk', 'created_at', 'file', 'keterangan', 'periode_magang']
     })
 
     res.status(200).json({

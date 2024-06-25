@@ -49,7 +49,7 @@ const viewMasukSekre = async (req, res) => {
                 as: 'dataMahasiswa',
                 attributes: ['id_mahasiswa', 'nama', 'instansi', 'jurusan']
             }],
-            attributes: ['id_surat_masuk', 'file', 'created_at']
+            attributes: ['id_surat_masuk', 'file', 'created_at', 'periode_magang']
         })
 
         if (findSuratMasuk.length === 0) {
@@ -94,7 +94,7 @@ const detailMasukSekre = async (req, res) => {
             as: 'dataAnggotaMagang',
             attributes: ['nama', 'nim']
         }],
-        attributes: ['id_surat_masuk', 'created_at', 'file', 'keterangan']
+        attributes: ['id_surat_masuk', 'created_at', 'file', 'keterangan', 'periode_magang']
     })
 
     res.status(200).json({

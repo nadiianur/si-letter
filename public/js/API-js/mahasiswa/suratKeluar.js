@@ -204,6 +204,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                             </div>
                         </div>
                     </td>
+                    <td>
+                        <button type="button" class="btn btn-danger" onclick="confirmDelete(${item.id_surat_masuk})"><i class='bx bx-trash'></i> Hapus</button>
+                    </td>
                 `;
                 tbody.appendChild(tr);
 
@@ -355,5 +358,65 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
         }
     }
+
+    //Delete surat keluar
+    window.confirmDelete = async function (id_surat_masuk) {
+        Swal.fire({
+            title: 'Batal Mengirim Surat',
+            text: 'Apakah Anda yakin ingin membatalkan pengiriman surat permohonan magang ini?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!',
+            cancelButtonText: 'Batal'
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const response = await fetch(`/deleteSuratKeluar/${id_surat_masuk}`, {
+                        method: 'POST'
+                    });
+                    const data = await response.json();
+                    if (data.success) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Sukses',
+                            text: 'Pembatalan pengiriman surat berhasil dilakukan',
+                            timer: 2000,
+                            timerProgressBar: true,
+                            willClose: () => {
+                                location.reload();
+                            }
+                        });
+                    }  else if (!data.success) {
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Gagal',
+                            text: data.message,
+                            timer: 2000,
+                            timerProgressBar: true,
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Gagal',
+                            text: 'Terjadi kesalahan saat menghapus data',
+                            timer: 2000,
+                            timerProgressBar: true
+                        });
+                    }
+                } catch (error) {
+                    console.error('Terjadi kesalahan:', error);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Gagal',
+                        text: 'Terjadi kesalahan saat menghapus data surat masuk',
+                        timer: 2000,
+                        timerProgressBar: true
+                    });
+                }
+            }
+        });
+    };
 
 });

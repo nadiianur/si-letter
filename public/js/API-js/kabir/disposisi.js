@@ -99,10 +99,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 tr.innerHTML = `
                         <th scope="row" class="col-1">${index + 1}</th>
                         <td class="col-2">${surat.dataMahasiswa.nama}</td>
-                        <td class="col-2">${surat.dataMahasiswa.instansi}</td>
+                        <td class="col-1">${surat.dataMahasiswa.instansi}</td>
                         <td class="col-1">${surat.dataMahasiswa.jurusan}</td> 
-                        <td class="col-3"><a href="#" class="file-link" data-file-url="${surat.file}" data-bs-toggle="modal" data-bs-target="#fileModal">${surat.file ? surat.file : '-'}</a></td>
-                        <td class="col-1">${new Date(surat.created_at).toLocaleDateString()}</td>
+                        <td class="col-2"><a href="#" class="file-link" data-file-url="${surat.file}" data-bs-toggle="modal" data-bs-target="#fileModal">${surat.file ? surat.file : '-'}</a></td>
+                        <td class="col-2">${surat.periode_magang}</td> 
                         <td class="col-1">
                             <button type="button" class="btn btn-secondary btn-detail" data-bs-toggle="modal"
                             data-bs-target="#detail${surat.id_surat_masuk}" style="background-color: grey; border-radius: 48%;">
@@ -222,6 +222,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         value="${detailData.data.dataMahasiswa.jurusan}" readonly>
                                     </div>
                                 </div>
+                            </div>
+                            <h6>Periode Magang</h6>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control form-control-lg fs-6 rounded-4 input-div"
+                                    value="${detailData.periode_magang}" readonly>
                             </div>
                             <h6>File Surat Pengajuan</h6>
                             <div class="input-group mb-3">

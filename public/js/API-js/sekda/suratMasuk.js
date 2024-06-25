@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <td class="col-2">${surat.dataMahasiswa.nama}</td>
                         <td class="col-1">${surat.dataMahasiswa.instansi}</td>
                         <td class="col-1">${surat.dataMahasiswa.jurusan}</td> 
-                        <td class="col-3"><a href="#" class="file-link" data-file-url="${surat.file}" data-bs-toggle="modal" data-bs-target="#fileModal">${surat.file ? surat.file : '-'}</a></td>
+                        <td class="col-1">${surat.periode_magang}</td> 
+                        <td class="col-2"><a href="#" class="file-link" data-file-url="${surat.file}" data-bs-toggle="modal" data-bs-target="#fileModal">${surat.file ? surat.file : '-'}</a></td>
                         <td class="col-1">${new Date(surat.created_at).toLocaleDateString()}</td>
                         <td class="col-1">
                             <button type="button" class="btn btn-secondary detail-btn" data-id="${surat.id_surat_masuk}" data-bs-toggle="modal" data-bs-target="#detailModal" style="background-color: grey; border-radius: 48%;">
@@ -110,6 +111,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 document.getElementById('tanggal').value = new Date(detail.created_at).toLocaleDateString();
                                 document.getElementById('instansi').value = detail.dataMahasiswa.instansi;
                                 document.getElementById('jurusan').value = detail.dataMahasiswa.jurusan;
+                                document.getElementById('periode_magang').value = detail.periode_magang;
                                 document.getElementById('fileSurat').textContent = detail.file;
 
                                 const fileSuratElement = document.getElementById('fileSurat');
