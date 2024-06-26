@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2024 at 11:26 AM
+-- Generation Time: Jun 26, 2024 at 04:11 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -42,21 +42,7 @@ CREATE TABLE `anggota_magang` (
 --
 
 INSERT INTO `anggota_magang` (`id_anggota_magang`, `id_surat_masuk`, `id_bagian`, `nama`, `nim`, `created_at`, `updated_at`) VALUES
-(7, 8, 19, 'huhu', '111', '2024-05-17 18:45:30', '2024-06-23 03:23:01'),
-(8, 9, 4, 'nama1', '111', '2024-05-19 14:32:13', '2024-06-20 04:49:10'),
-(9, 9, 4, 'nama2', '222', '2024-05-19 14:32:13', '2024-06-20 04:49:10'),
-(31, 27, NULL, '111', '11', '2024-06-07 16:47:16', '2024-06-07 16:47:16'),
-(32, 28, 4, 'nadia', '2111521007', '2024-06-07 16:49:00', '2024-06-22 17:13:47'),
-(33, 28, 5, 'nur', '2111521008', '2024-06-07 16:49:00', '2024-06-22 17:13:47'),
-(34, 30, 7, 'Sarah', '2111521007', '2024-06-17 07:28:50', '2024-06-17 08:12:36'),
-(35, 30, 8, 'Permata', '2111521008', '2024-06-17 07:28:50', '2024-06-17 08:12:36'),
-(36, 30, 9, 'Sari', '2111521009', '2024-06-17 07:28:50', '2024-06-17 08:12:36'),
-(37, 31, 4, 'Nadia Nur Saida', '2111521007', '2024-06-22 23:48:28', '2024-06-22 23:49:21'),
-(38, 31, 4, 'Vania Zerlina Utami', '2111523003', '2024-06-22 23:48:28', '2024-06-22 23:49:21'),
-(39, 31, 5, 'Syadza Intan Benya', '2111521011', '2024-06-22 23:48:28', '2024-06-22 23:49:21'),
-(40, 31, 5, 'Nadini Annisa Byant', '2111522021', '2024-06-22 23:48:28', '2024-06-22 23:49:21'),
-(41, 32, 19, 'saida', '154545', '2024-06-24 08:48:42', '2024-06-24 08:52:05'),
-(42, 32, 21, 'zerlina', '54545', '2024-06-24 08:48:42', '2024-06-24 08:52:05');
+(46, 34, 4, 'yaya', '211162002', '2024-06-25 15:35:14', '2024-06-25 15:37:01');
 
 -- --------------------------------------------------------
 
@@ -154,26 +140,9 @@ CREATE TABLE `disposisi` (
 --
 
 INSERT INTO `disposisi` (`id_disposisi`, `id_surat_masuk`, `id_pegawai`, `keterangan`, `status`, `created_at`, `updated_at`) VALUES
-(82, 30, 10, NULL, 'Telah di setujui sekretaris biro', '2024-06-17 07:56:28', '2024-06-17 07:56:28'),
-(83, 30, 9, NULL, 'Telah di setujui kepala bagian', '2024-06-17 08:12:36', '2024-06-17 08:12:36'),
-(84, 30, 8, NULL, 'Disetujui', '2024-06-17 08:43:20', '2024-06-17 08:43:20'),
-(85, 28, 7, NULL, 'Telah di setujui sekretaris biro', '2024-06-19 18:20:50', '2024-06-19 18:20:50'),
-(86, 9, 7, NULL, 'Telah di setujui sekretaris biro', '2024-06-20 01:01:11', '2024-06-20 01:01:11'),
-(99, 9, 6, NULL, 'Telah di setujui kepala bagian', '2024-06-20 04:49:10', '2024-06-20 04:49:10'),
-(103, 28, 5, NULL, 'Disetujui', '2024-06-20 07:25:42', '2024-06-20 07:25:42'),
-(104, 9, 5, 'test\n', 'Ditolak', '2024-06-20 07:25:53', '2024-06-20 07:25:53'),
-(106, 28, 6, NULL, 'Telah di setujui kepala bagian', '2024-06-22 17:13:47', '2024-06-22 17:13:47'),
-(107, 31, 7, NULL, 'Telah di setujui sekretaris biro', '2024-06-22 23:48:51', '2024-06-22 23:48:51'),
-(108, 31, 6, NULL, 'Telah di setujui kepala bagian', '2024-06-22 23:49:21', '2024-06-22 23:49:21'),
-(109, 31, 6, NULL, 'Telah di setujui kepala bagian', '2024-06-22 23:49:21', '2024-06-22 23:49:21'),
-(110, 31, 6, NULL, 'Telah di setujui kepala bagian', '2024-06-22 23:49:21', '2024-06-22 23:49:21'),
-(111, 31, 5, NULL, 'Disetujui', '2024-06-22 23:49:41', '2024-06-22 23:49:41'),
-(112, 8, 22, NULL, 'Telah di setujui sekretaris biro', '2024-06-23 03:22:39', '2024-06-23 03:22:39'),
-(113, 8, 21, NULL, 'Telah di setujui kepala bagian', '2024-06-23 03:23:01', '2024-06-23 03:23:01'),
-(114, 32, 22, NULL, 'Telah di setujui sekretaris biro', '2024-06-24 08:50:54', '2024-06-24 08:50:54'),
-(115, 32, 21, NULL, 'Telah di setujui kepala bagian', '2024-06-24 08:52:05', '2024-06-24 08:52:05'),
-(116, 32, 21, NULL, 'Telah di setujui kepala bagian', '2024-06-24 08:52:05', '2024-06-24 08:52:05'),
-(117, 32, 20, NULL, 'Disetujui', '2024-06-24 08:53:14', '2024-06-24 08:53:14');
+(118, 34, 7, NULL, 'Telah di setujui sekretaris biro', '2024-06-25 15:35:35', '2024-06-25 15:35:35'),
+(119, 34, 6, NULL, 'Telah di setujui kepala bagian', '2024-06-25 15:37:01', '2024-06-25 15:37:01'),
+(120, 34, 5, NULL, 'Disetujui', '2024-06-25 15:37:12', '2024-06-25 15:37:12');
 
 -- --------------------------------------------------------
 
@@ -207,7 +176,9 @@ INSERT INTO `mahasiswa` (`id_mahasiswa`, `nama`, `username`, `password`, `instan
 (3, 'Sarah Permata Sari', 'sarahpermata', '$2b$10$VLUX0x2gtRkrxvNlqB9fM.3bmLXVKZraQz.ZGggbmJ3YND0Tkrf/i', 'Universitas Andalas', 'Fakultas Teknologi Informasi', 'Sistem Informasi', '2021', 'Perempuan', '087899144407', NULL, '2024-06-07 17:15:18', '2024-06-07 17:15:18'),
 (4, 'A', 'A', '$2b$10$tdg4LOc00bmAwGwEe7gTCuv/yYRpMskcojjP4dLFrml59.ksEBKMW', 'A', 'A', 'A', '1', 'Perempuan', '1', NULL, '2024-06-07 17:18:31', '2024-06-07 17:18:31'),
 (5, 'a', 'ab', '$2b$10$m//en/oGnAIAJ14T46gEp.GWvy.jZdSxw1aihwbyZNPf7xEyg16Iy', 'a', 'a', 'a', '1', 'Perempuan', '1', NULL, '2024-06-07 17:22:01', '2024-06-07 17:22:01'),
-(6, 'Syadza Intan Benya', 'syadza', '$2b$10$eaHhk1aTfO.AXEgR4o4ajuy9L6fanfAXnKjbwAHSWxfhtKZW/kkY.', 'Universitas Andalas', 'Fakultas Teknologi Informasi', 'Sistem Informasi', '2021', 'Perempuan', '089999887711', NULL, '2024-06-22 23:46:47', '2024-06-22 23:46:47');
+(6, 'Syadza Intan Benya', 'syadza', '$2b$10$eaHhk1aTfO.AXEgR4o4ajuy9L6fanfAXnKjbwAHSWxfhtKZW/kkY.', 'Universitas Andalas', 'Fakultas Teknologi Informasi', 'Sistem Informasi', '2021', 'Perempuan', '089999887711', NULL, '2024-06-22 23:46:47', '2024-06-22 23:46:47'),
+(7, 'mahasiswa testing', 'mahasiswa', '$2b$10$XlqvUGpz.Nw9Ov5DtWZ0I.DNT/M4UvtSND2XvrywLSnW856xKIzzW', 'Universitas Negeri Padang', 'Teknik', 'Teknik Mesin', '2022', 'Laki- laki', '08900023307', NULL, '2024-06-25 15:07:56', '2024-06-25 15:07:56'),
+(8, 'mahasiswa', 'mahasiswatest', '$2b$10$7D2RYzShatKfiIBSVkFlleGSLcnyYsaanQ4O9Nd98gCNefRpi8kVi', 'UPI YPTK Padang', 'Fakultas Teknologi Informasi', 'Sistem Informasi', '2021', 'Laki- laki', '111', NULL, '2024-06-25 15:34:42', '2024-06-25 15:34:42');
 
 -- --------------------------------------------------------
 
@@ -238,9 +209,9 @@ INSERT INTO `pegawai` (`id_pegawai`, `id_role`, `id_biro`, `id_bagian`, `nama`, 
 (1, 1, 1, NULL, 'Doni Rahmat Samulo, S.STP,M.S', '197606181995111001', 'Biro Pemerintahan', 'donirahmat@gmail.com', '$2b$10$aUwNt6S9DRhcD59YsMT5V.LBMaVpIiWdlOOHLCFio994Zg5/tZz.O', NULL, '2024-05-15 16:23:33', '2024-05-15 16:23:33'),
 (2, 2, 1, 2, 'Nuzurwan Erixon, S.IP, M.SI', '197207061992031002', 'Kabag Pemerintahan', 'nuzurwan@gmail.com', '$2b$10$pdm2g3uK1WIyE3KoQ3ftT.TnjuyFvUkWuWawWLoT.xJQ2znN/.Aei', NULL, '2024-05-15 16:27:14', '2024-05-15 16:27:14'),
 (3, 3, 1, 2, 'Arnel Efita, S.E, M.SI', '197411111997012002', 'Sekretaris Pemerintahan', 'arnelefita@gmail.com', '$2b$10$NSbgfgsQM91oLRSohFiFp.Fx8yLnKKx4Mt8aSt2FSDz/P/ahh4TE.', NULL, '2024-05-15 16:28:27', '2024-05-15 16:28:27'),
-(5, 1, 2, NULL, 'Ezeddin Zain, S.H, M.E.', '197410311998031004', 'Biro Hukum', 'ezeddinzain@gmail.com', '$2b$10$jv35.L3Gwm9v820GXXsgQuggZ3mHTIfFDwhUiv3RBwJNFOn8p6ygC', 'Workshop MD.png', '2024-05-15 16:33:52', '2024-06-21 00:00:07'),
-(6, 2, 2, 4, 'M. Rezha Fahlevie, S.H, M.H.', '198204142006041003', 'Kabag Hukum', 'rezha@gmail.com', '$2b$10$wtgGF0BQh8J30RvueyPEI.5n1Pv5GUMP5vzGT8q2fQ4.4YWxg2ZOG', 'depan.png', '2024-05-15 16:38:00', '2024-06-20 23:58:32'),
-(7, 3, 2, 4, 'Sujaswadi, S.T, M.M', '197503212010011006', 'Sekretaris Hukum', 'sujaswadi@gmail.com', '$2b$10$hNYtPEslJgiYmhOYRCgeuu6nCqrEqh0tlHSOYcW8TqjsNw8UwHgCa', 'Twibbon PIP 7.0.png', '2024-05-15 16:38:48', '2024-06-20 23:14:40'),
+(5, 1, 2, NULL, 'Ezeddin Zain, S.H, M.E.', '197410311998031004', 'Biro Hukum', 'ezeddinzain@gmail.com', '$2b$10$jv35.L3Gwm9v820GXXsgQuggZ3mHTIfFDwhUiv3RBwJNFOn8p6ygC', 'Blue and White Professional Business LinkedIn Career Page Background.png', '2024-05-15 16:33:52', '2024-06-25 15:37:30'),
+(6, 2, 2, 4, 'M. Rezha Fahlevie, S.H, M.H.', '198204142006041003', 'Kabag Hukum', 'rezha@gmail.com', '$2b$10$wtgGF0BQh8J30RvueyPEI.5n1Pv5GUMP5vzGT8q2fQ4.4YWxg2ZOG', NULL, '2024-05-15 16:38:00', '2024-06-20 23:58:32'),
+(7, 3, 2, 4, 'Sujaswadi, S.T, M.M', '197503212010011006', 'Sekretaris Hukum', 'sujaswadi@gmail.com', '$2b$10$hNYtPEslJgiYmhOYRCgeuu6nCqrEqh0tlHSOYcW8TqjsNw8UwHgCa', NULL, '2024-05-15 16:38:48', '2024-06-20 23:14:40'),
 (8, 1, 3, NULL, 'Drs. Jasman. M.M', '196801011988091001', 'Biro Humas', 'jasman@gmail.com', '$2b$10$vLnbY9MhS/NNSEbOxLbqkuJqs90078zm6WkmGf6rKpnCp7J7Yk6De', NULL, '2024-05-15 16:43:11', '2024-05-15 16:43:11'),
 (9, 2, 3, 9, 'Zardi Syahrir, S.H, M.M', '196806211989031003', 'Kabag Humas', 'zardi@gmail.com', '$2b$10$fKBxgVmAOKOA0vvMDTgfFeYd3EZah9QtG.0SvYf3gMIZSFB9E9E8S', NULL, '2024-05-15 16:44:21', '2024-05-15 16:44:21'),
 (10, 3, 3, 9, 'Dian Maya Sari. S.STP', '198509102006022001', 'Sekretaris Humas', 'dianmaya@gmail.com', '$2b$10$yPNdy5D60kkqKjFeJ8ZVxeeDYxIcPl2nfY/FgX8fISZpjGimWMLLK', NULL, '2024-05-15 16:44:59', '2024-05-15 16:44:59'),
@@ -309,10 +280,7 @@ CREATE TABLE `surat_keluar` (
 --
 
 INSERT INTO `surat_keluar` (`id_surat_keluar`, `id_surat_masuk`, `id_mahasiswa`, `id_biro`, `no_surat`, `perihal`, `file`, `keterangan`, `created_at`, `updated_at`) VALUES
-(1, 8, 1, 7, '3', 'AAA', 'Tugas Besar_2111521007_Nadia Nur Saida.pdf', 'AA', '2024-06-06 17:38:22', '2024-06-06 17:38:22'),
-(20, 31, 6, 2, '2.2024', 'Penerimaan Permohonan Magang Mahasiswa', 'Surat_Balasan_2.2024.pdf', 'test 2', '2024-06-22 23:51:11', '2024-06-22 23:51:16'),
-(21, 28, 1, 2, '3.2024', 'Penerimaan Permohonan Magang Mahasiswa', 'Surat_Balasan_3.2024.pdf', 'silahkan kembali pada tangggal 3 mei 2024', '2024-06-24 07:08:00', '2024-06-24 07:08:24'),
-(22, 32, 1, 7, '5.2024', 'Penerimaan Permohonan Magang Mahasiswa', 'Surat_Balasan_5.2024.pdf', 'silahkan balik tanggal 5', '2024-06-24 08:54:50', '2024-06-24 08:54:55');
+(31, 34, 8, 2, '1.2024', 'Penerimaan Permohonan Magang Mahasiswa', 'Surat_Balasan_1.2024.pdf', 'balik lagi secepatnya', '2024-06-25 15:38:05', '2024-06-25 15:38:16');
 
 -- --------------------------------------------------------
 
@@ -336,13 +304,7 @@ CREATE TABLE `surat_masuk` (
 --
 
 INSERT INTO `surat_masuk` (`id_surat_masuk`, `id_mahasiswa`, `id_biro`, `periode_magang`, `file`, `keterangan`, `created_at`, `updated_at`) VALUES
-(8, 1, 7, '1 Mei - 31 Mei 20', 'Colorful Playful Illustration 2024 Calendar(6).pdf', NULL, '2024-05-17 18:45:30', '2024-05-17 18:45:30'),
-(9, 1, 2, '1 Mei - 31 Mei 20', 'Colorful Playful Illustration 2024 Calendar.pdf', NULL, '2024-05-19 14:32:13', '2024-05-19 14:32:13'),
-(27, 1, 3, '123', 'Nadia Nur Saida-resume (17).pdf', '', '2024-06-07 16:47:16', '2024-06-07 16:47:16'),
-(28, 1, 2, '15 januari - 23 Mei 2024', 'Laporan Penilaian Pegawai Periode Februari Tahun 2024.pdf', '', '2024-06-07 16:49:00', '2024-06-07 16:49:00'),
-(30, 1, 3, '12 Januari - 14 Mei 2024', 'Nadia Nur Saida-resume (17)(1).pdf', 'Assalamualaikum selamat pagi bapak ibuk, \nsaya nadia perwakilan blablabla\nmohon ditinjau surat permohonan magang dari kami, terimakasih', '2024-06-17 07:28:50', '2024-06-17 07:28:50'),
-(31, 6, 2, '1 Mei - 13 Juli 2024', '1629-Article Text-6801-1-10-20240212.pdf', 'Assalamualaikum selamat pagi bapak ibuk, \r\nsaya syadza perwakilan blablabla\r\nmohon ditinjau surat permohonan magang dari kami, terimakasih', '2024-06-22 23:48:28', '2024-06-22 23:48:28'),
-(32, 1, 7, '12 Januari - 14 Mei 2024', 'JURNAL_RANTAI_PASOK+CLEAR.pdf', 'terima aja', '2024-06-24 08:48:42', '2024-06-24 08:48:42');
+(34, 8, 2, '1 Mei 2024', '1629-Article Text-6801-1-10-20240212.pdf', 'yy', '2024-06-25 15:35:14', '2024-06-25 15:35:14');
 
 --
 -- Indexes for dumped tables
@@ -423,7 +385,7 @@ ALTER TABLE `surat_masuk`
 -- AUTO_INCREMENT for table `anggota_magang`
 --
 ALTER TABLE `anggota_magang`
-  MODIFY `id_anggota_magang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id_anggota_magang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `bagian`
@@ -441,13 +403,13 @@ ALTER TABLE `biro`
 -- AUTO_INCREMENT for table `disposisi`
 --
 ALTER TABLE `disposisi`
-  MODIFY `id_disposisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
+  MODIFY `id_disposisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `pegawai`
@@ -465,13 +427,13 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT for table `surat_keluar`
 --
 ALTER TABLE `surat_keluar`
-  MODIFY `id_surat_keluar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_surat_keluar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `surat_masuk`
 --
 ALTER TABLE `surat_masuk`
-  MODIFY `id_surat_masuk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id_surat_masuk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- Constraints for dumped tables
@@ -509,9 +471,9 @@ ALTER TABLE `pegawai`
 -- Constraints for table `surat_keluar`
 --
 ALTER TABLE `surat_keluar`
-  ADD CONSTRAINT `surat_keluar_ibfk_1` FOREIGN KEY (`id_mahasiswa`) REFERENCES `mahasiswa` (`id_mahasiswa`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `surat_keluar_ibfk_2` FOREIGN KEY (`id_biro`) REFERENCES `biro` (`id_biro`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `surat_keluar_ibfk_3` FOREIGN KEY (`id_surat_masuk`) REFERENCES `surat_masuk` (`id_surat_masuk`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `surat_keluar_ibfk_3` FOREIGN KEY (`id_surat_masuk`) REFERENCES `surat_masuk` (`id_surat_masuk`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `surat_keluar_ibfk_4` FOREIGN KEY (`id_mahasiswa`) REFERENCES `mahasiswa` (`id_mahasiswa`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `surat_masuk`
